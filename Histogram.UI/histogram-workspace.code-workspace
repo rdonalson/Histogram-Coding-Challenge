@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+      {
+        "name": "Launch Edge",
+        "request": "launch",
+        "sourceMaps": true,
+        "type": "pwa-msedge",
+        "url": "http://localhost:1000",
+        "webRoot": "${workspaceFolder}"
+      },
+
+			{
+				"name": "Launch Chrome",
+        "sourceMaps": true,
+				"type": "pwa-msedge",
+				"request": "launch",
+				"url": "http://localhost:1000",
+				"webRoot": "${workspaceFolder}"
+			}
+		]
+	}
+}

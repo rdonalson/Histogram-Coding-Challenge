@@ -1,0 +1,35 @@
+<div class="p-formgroup-inline">
+  <div class="p-field">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="p-field">
+    <input
+      id="inputText"
+      name="inputText"
+      type="text"
+      pInputText
+      placeholder="Enter Text Statement"
+      [(ngModel)]="inputTextValue"
+    />
+  </div>
+  <button pButton type="button" label="Submit" (click)="getNewData()"></button>
+</div>
+<div class="p-d-flex">Current: {{phrase}}</div>
+<p-chart id="chart" type="bar" [data]="chartData" [options]="options"></p-chart>
+
+<table class="table table-sm" *ngIf="bigramList">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Bigram</th>
+      <th scope="col">Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bigram of bigramList; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ bigram.bigram }}</td>
+      <td>{{ bigram.count }}</td>
+    </tr>
+  </tbody>
+</table>
