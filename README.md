@@ -1,4 +1,8 @@
 # Histogram-Coding-Challenge
+
+Caveat: The API uses a GET with a string argument that is limited in size due URL length restrictions
+#TODO: Restructure API to use a POST or PUT that can carry a large payload and still return the data needed.
+
 Histogram Coding Challenge for VAE
 Steps to Run:
   1. Download project
